@@ -17,7 +17,7 @@ function VideoCall() {
 
     useEffect(() => {
         if (address) {
-            const peer = new Peer(address);
+            const peer = new Peer();
 
             peer.on("open", (id) => {
                 setPeerId(id);
